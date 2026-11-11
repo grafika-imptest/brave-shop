@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  <title>Brave Shop — Interiér, Sport a Výživa</title>
+  <meta name="description" content="Tři světy jedné šablony Brave Shop. Interaktivní ukázka e-shopu pro interiér, sport a výživu.">
+  <link rel="icon" href="./favicon.svg?v=brave-shop" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./experience.css">
+  <script src="./presets.js" defer></script>
+  <script src="./app.js" defer></script>
+  <script src="./experience.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Přeskočit na obsah</a>
+<div class="announcement"><span class="announcement-side">Design, který patří domů.</span><button data-action="announcement-prev" aria-label="Předchozí oznámení">‹</button><span id="announcement-text">Doprava zdarma při nákupu nad 1 990 Kč</span><button data-action="announcement-next" aria-label="Další oznámení">›</button><a class="announcement-side" href="#page/doprava">Doprava a vrácení ↗</a></div>
+<header>
+ <div class="header-main"><button class="icon mobile-menu" data-action="menu" aria-label="Otevřít menu">☰</button><a class="logo" href="#home" aria-label="Brave Shop — domů"><img src="./assets/brave-shop-logo.svg" alt="Brave Shop" width="101.5" height="37.88"></a><nav class="editorial-nav" aria-label="O nás"><a href="#page/blog">Inspirace</a><a href="#page/o-nas">Náš příběh</a><a href="#page/kontakty">Kontakt</a></nav><div class="header-actions"><button class="language" data-action="language" aria-label="Jazyk a měna">CZ / CZK⌄</button><button class="icon" data-action="search" aria-label="Vyhledávání" data-icon="search"></button><button class="icon account-icon" data-action="account" aria-label="Můj účet" data-icon="user"></button><a class="icon compare-icon" href="#compare" aria-label="Porovnání produktů" data-icon="compare"></a><a class="icon" href="#wishlist" aria-label="Oblíbené produkty" data-icon="heart"><span id="wish-count" class="counter"></span></a><button class="icon bag" data-action="cart" aria-label="Otevřít košík" data-icon="bag"><span id="cart-count" class="counter">0</span></button></div></div>
+ <nav class="category-nav" aria-label="Kategorie produktů"><a href="#catalog/all">Všechny produkty</a><a href="#catalog/living">Obývací pokoj <small>⌄</small></a><a href="#catalog/bedroom">Ložnice <small>⌄</small></a><a href="#catalog/dining">Kuchyně a jídelna <small>⌄</small></a><a href="#catalog/storage">Úložné prostory</a><a href="#catalog/office">Pracovna</a><a href="#catalog/garden">Zahrada a balkon</a><a class="sale-link" href="#catalog/sale">Výprodej ↗</a></nav>
+ <div id="mega-menu" class="mega-menu" hidden></div>
+</header>
+<main id="main" tabindex="-1"></main>
+<footer><div class="footer-top"><div><p class="eyebrow">MALÁ DÁVKA VELKÉ INSPIRACE</p><h2>Udělejte si<br>místo pro nové.</h2><p>Nové kolekce, příběhy a nápady pro váš domov.</p></div><form id="newsletter"><label for="newsletter-email">Váš e-mail</label><div class="email-line"><input id="newsletter-email" type="email" placeholder="vas@email.cz" required><button aria-label="Přihlásit k newsletteru">↗</button></div><label class="checkline"><input type="checkbox" required> Souhlasím se <a href="#page/zpracovani-osobnich-udaju">zpracováním osobních údajů</a>.</label><small>Ukázkový formulář. E-mail se nikam neodesílá.</small></form></div><div class="footer-links"><div><a class="logo" href="#home"><img src="./assets/brave-shop-logo.svg" alt="Brave Shop" width="101.5" height="37.88"></a><p>Prostor pro váš život.</p><p class="muted">Interaktivní demo šablony Brave Shop.<br>Produkty, ceny a služby jsou ilustrační.</p><a href="tel:+420534001313">+420 534 001 313</a><a href="mailto:info@bravecms.cz">info@bravecms.cz</a></div><div><h3>Objevujte</h3><a href="#catalog/all">Všechny produkty</a><a href="#page/vyrobci">Značky a výrobci</a><a href="#page/dodavatele">Dodavatelé</a><a href="#page/blog">Inspirace a blog</a><a href="#page/udalosti">Události</a><a href="#page/aktuality">Aktuality</a></div><div><h3>Jsme tu pro vás</h3><a href="#page/doprava">Doprava a platba</a><a href="#page/vraceni-a-reklamace">Vrácení a reklamace</a><a href="#page/faq">Časté otázky</a><a href="#page/poradna">Poradna</a><a href="#page/rezervace-konzultace">Rezervace konzultace</a><a href="#page/kontakty">Kontakty</a></div><div><h3>Svět Brave</h3><a href="#page/o-nas">O nás</a><a href="#page/recenze">Recenze</a><a href="#page/reference">Reference</a><a href="#page/slovnik-pojmu">Slovník pojmů</a><a href="#page/obchodnipodminky">Obchodní podmínky</a><a href="#page/mapa-stranek">Mapa stránek</a></div></div><div class="footer-bottom"><span>© 2026 Brave Shop · Design demo</span><div><a href="#page/odstoupeni-od-smlouvy">Odstoupení od smlouvy</a><a href="#page/zpracovani-osobnich-udaju">Soukromí</a><button data-action="cookies">Cookies</button></div><span>VISA &nbsp; Mastercard &nbsp; Apple Pay</span></div></footer>
+<button class="chat-launch" data-action="chat" aria-label="Otevřít poradnu" data-icon="chat"></button>
+<div id="overlay" class="overlay" hidden></div><aside id="drawer" class="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="drawer-title"></aside>
+<dialog id="modal" aria-labelledby="modal-title"></dialog><div id="toast" class="toast" role="status"></div><div id="cursor" aria-hidden="true">OB JEVIT ↗</div>
+<div id="cookie-banner" class="cookie-banner" hidden><div><strong>I malé detaily dělají domov.</strong><p>Používáme pouze místní úložiště pro košík a vaše nastavení. Volitelné měření je v maketě vypnuté.</p></div><button data-action="cookie-settings">Nastavení</button><button data-action="cookie-necessary">Pouze nezbytné</button><button class="btn dark" data-action="cookie-all">Přijmout vše</button></div>
+</body></html>
