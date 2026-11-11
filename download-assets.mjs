@@ -1,0 +1,4 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+await mkdir('dist/assets',{recursive:true});
+const images={hero:'1600210492486-724fe5c67fb0',living:'1600607687920-4e2a09cf159d',chair:'1567538096630-e0c55bd6374c',sofa:'1555041469-a586c61ea9bc',dining:'1617806118233-18e1de247200',bedroom:'1616486338812-3dadae4b4ace',detail:'1600210491892-03d54c0aaf87',office:'1497366754035-f200968a6e72',garden:'1600210492493-0946911123ea',table:'1499933374294-4584851497cc',lamp:'1507473885765-e6ed057f782c',shelf:'1594620302200-9a762244a156'};
+await Promise.all(Object.entries(images).map(async([name,id])=>{try{const r=await fetch(`https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${['hero','living','detail'].includes(name)?2200:1000}&q=85`,{signal:AbortSignal.timeout(45000)});if(!r.ok)throw Error(r.status);await writeFile(`dist/assets/${name}.jpg`,Buffer.from(await r.arrayBuffer()));console.log(name+' OK');}catch(e){console.log(name+' FAILED '+e.message)}}));
