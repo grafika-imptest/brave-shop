@@ -1,10 +1,11 @@
 {
   "name": "brave-shop-three-presets-demo",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node serve.mjs",
-    "check": "node --check dist/app.js && node --check dist/presets.js && node --check dist/experience.js"
+    "dev": "node serve.mjs 5360",
+    "check": "node --check dist/app.js && node --check dist/presets.js && node --check dist/experience.js && node --check dist/motion.js",
+    "test": "node tools/test.mjs"
   }
 }
