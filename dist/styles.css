@@ -103,7 +103,7 @@ body[data-style=sport] .mega-menu>div>a small{color:var(--muted)}
 .hero-slide:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.32) 0%,rgba(0,0,0,0) 26%),linear-gradient(0deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 55%),linear-gradient(90deg,rgba(0,0,0,.25),rgba(0,0,0,0) 55%);pointer-events:none}
 body[data-style=nutrition] .hero-slide:after,body[data-style=sport] .hero-slide:after{background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 26%),linear-gradient(0deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,0) 60%),linear-gradient(90deg,rgba(0,0,0,.42),rgba(0,0,0,0) 62%)}
 .hero-content{position:absolute;z-index:2;left:var(--pad);right:var(--pad);bottom:clamp(150px,19vh,200px);max-width:1100px}
-.hero h1{font-size:clamp(56px,9.4vw,176px);line-height:.9;letter-spacing:-.055em;margin:0 0 28px;font-weight:500}
+.hero h1{font-size:clamp(48px,min(6.6vw,11.5vh),128px);line-height:.94;letter-spacing:-.05em;margin:0 0 24px;font-weight:500;max-width:12ch}
 .hero .eyebrow{color:#fff;opacity:.9}
 .hero-text{font-size:clamp(15px,1.15vw,18px);max-width:420px;opacity:.9;margin-bottom:30px}
 .hero-content .eyebrow,.hero-text,.hero-links{opacity:0;transform:translateY(18px);transition:opacity .9s var(--ease) .1s,transform 1.1s var(--ease) .1s}
