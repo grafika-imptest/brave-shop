@@ -12,7 +12,7 @@ const pct=p=>Math.round((1-p.price/p.old)*100);
 /* Ikony výhod ve stylu „line + offset fill“: obrys s bílou výplní, pod ním posunutý světle šedý tvar. */
 const duoIcons={
  truck:['<path d="M8 28h48v38H8Z"/><path d="M56 40h20l14 14v12H56Z"/>','<path d="M8 28h48v38H8Z" fill="#fff"/><path d="M56 40h20l14 14v12H56Z" fill="#fff"/><path d="M62 46h12l8 8H62Z"/><circle cx="26" cy="70" r="8" fill="#fff"/><circle cx="74" cy="70" r="8" fill="#fff"/>'],
- return:['<path d="M18 42h52v40H18Z"/>','<path d="M18 42h52v40H18Z" fill="#fff"/><path d="M18 42l8-12h36l8 12"/><path d="M36 42v10h16V42"/><path d="M76 34a24 24 0 0 0-40-16" class="wi__turn"/><path d="M34 10l2 9 9-2" class="wi__turn"/>'],
+ return:['<path d="M16 48h56v36H16Z"/>','<path d="M16 48h56v36H16Z" fill="#fff"/><path d="M16 48l8-12h40l8 12"/><path d="M36 48v10h16V48"/><g class="wi__turn"><path d="M80 32C78 15 62 6 44 10"/><path d="M52 3 43 10l8 8"/></g>'],
  leaf:['<path d="M22 80C16 44 42 18 84 18c2 40-22 66-62 62Z"/>','<path d="M22 80C16 44 42 18 84 18c2 40-22 66-62 62Z" fill="#fff"/><path d="M14 88 64 38"/><path d="M40 62h16M50 52V38"/>'],
  chat:['<path d="M12 18h60v40H40L24 72V58H12Z"/>','<path d="M12 18h60v40H40L24 72V58H12Z" fill="#fff"/><path d="M26 32h32M26 44h20"/><path d="M80 34h8v34h-8v12L68 68H50" class="wi__bubble"/>'],
  shield:['<path d="M50 12 82 24v24c0 20-14 32-32 40-18-8-32-20-32-40V24Z"/>','<path d="M50 12 82 24v24c0 20-14 32-32 40-18-8-32-20-32-40V24Z" fill="#fff"/><path d="M36 50l10 10 20-22" class="wi__check"/>']};
