@@ -146,7 +146,8 @@ main.enter>.hero{animation:none}
 .benefits>div:hover .wi__fill{transform:translate(11px,11px)}
 .benefits>div:hover .wi__line{transform:translate(-2px,-2px)}
 .wi__turn,.wi__check,.wi__bubble{transition:transform .6s var(--ease);transform-box:fill-box;transform-origin:center}
-.benefits>div:hover .wi__turn{transform:rotate(-14deg)}
+.wi__turn{transform-box:view-box;transform-origin:62px 30px}
+.benefits>div:hover .wi__turn{transform:rotate(-16deg)}
 .benefits>div:hover .wi__check{transform:scale(1.08)}
 .benefits>div:hover .wi__bubble{transform:translate(2px,-2px)}
 @media(prefers-reduced-motion:reduce){.wi__fill,.wi__line{transition:none}}
